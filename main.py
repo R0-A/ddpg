@@ -102,7 +102,7 @@ if __name__ == "__main__":
     parser.add_argument("--save_episode", default=200, type=int, help="Save model every % episodes")
     parser.add_argument("--load", default=False, type=bool, help="Load model")
     parser.add_argument("--save_dir", default="save5", type=str, help="Save path")
-    parser.add_argument("--model_episode", default="9800", type=str, help="Model path")
+    parser.add_argument("--model_episode", default="1000", type=str, help="Model path")
 
     # Power Allocate
     parser.add_argument("--power_allocate", default=False, type=bool)

@@ -457,7 +457,7 @@ class Satellite:
         #     reward = -2.3
         # elif Th<480 :
         #     reward = -3.0
-        reward = Th/50 - dump/2
+        reward = Th/50 - 10*dump
         
 
         terminate = True if step == self.Episode_Length else False

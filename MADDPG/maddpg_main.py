@@ -133,7 +133,7 @@ def maddpg_train(config, env):
     models = None
     if config.load:
         models = torch.load(
-            path.join('save1/', config.model_episode + '.pt'),
+            path.join('save2/', config.model_episode + '.pt'),
             map_location=device,
             weights_only=False
         )
@@ -224,7 +224,7 @@ def maddpg_train(config, env):
 
             # 每一定轮次保存模型
             if episode % config.save_episode == 0:
-                save_path = path.join("save2/", f"{episode}.pt")
+                save_path = path.join("save3/", f"{episode}.pt")
                 torch.save(maddpg.agents, save_path)
             episode += 1
             if 100000 < episode < 150000:
